@@ -1,0 +1,63 @@
+<!-- templates/about/tech.html -->
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+{% comment %} Колонки с отступом сверху и снизу {% endcomment %}
+<div class="row">
+  <h1>Вот что я умею</h1>
+  {% comment %}
+    Боковой блок со списком технологий 
+    Займет всю ширину блока на мобильном
+    и 25% при размерах экрана ≥768px
+  {% endcomment %}
+  <aside class="col-12 col-md-3">
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python
+      </li>
+      <li class="list-group-item">
+        Django
+      </li>
+    </ul>
+  </aside>
+  {% comment %}
+    Статья  
+    Займет всю ширину блока на мобильном
+    и 75% при размерах экрана ≥768px
+  {% endcomment %}
+  <article class="col-12 col-md-9">
+    <p>Текст страницы "Технологии"</p>
+  </article>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Технология</th>
+        <th scope="col">Автор</th>
+        <th scope="col">Место работы</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Python</td>
+        <td>Гвидо ван Россум</td>
+        <td>Python Software Foundation</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Django</td>
+        <td>Adrian Holovaty</td>
+        <td>Django Software Foundation</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Bootstrap</td>
+        <td>Mark Otto</td>
+        <td>Bootstrap Core Team</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
