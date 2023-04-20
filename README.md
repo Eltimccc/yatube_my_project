@@ -46,5 +46,5 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-### Авторы
-eltimccc
+### Автор
+[Денис М. (Python-разработчик)](https://github.com/Eltimccc "Денис М (Python-разработчик)")
